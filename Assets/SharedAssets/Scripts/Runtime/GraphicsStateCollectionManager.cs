@@ -152,7 +152,7 @@ public class GraphicsStateCollectionManager : MonoBehaviour
 
 #if UNITY_EDITOR
 [CustomEditor(typeof(GraphicsStateCollectionManager))]
-class GraphicsStateCollectionManagerEditor : Editor
+class GraphicsStateCollectionManagerEditor : UnityEditor.Editor
 {
     private const string k_Message =
         "Right click on this component to fill the collection list automatically with the files from the GraphicsStateCollections folder. \n" +

@@ -6,7 +6,7 @@ using UnityEditor.UIElements;
 using UnityEngine.UIElements;
 
 [CustomEditor(typeof(QualityLevelToggle))]
-public class QualityLevelToggleEditor : Editor
+public class QualityLevelToggleEditor : UnityEditor.Editor
 {
     private const string k_Label = "Enable on QualityLevel";
 

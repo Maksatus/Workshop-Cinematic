@@ -103,7 +103,7 @@ public class HeightMapRenderer : MonoBehaviour
 }
 
 [CustomEditor(typeof(HeightMapRenderer))]
-public class HeightMapRendererEditor : Editor
+public class HeightMapRendererEditor : UnityEditor.Editor
 {
     public override void OnInspectorGUI()
     {
