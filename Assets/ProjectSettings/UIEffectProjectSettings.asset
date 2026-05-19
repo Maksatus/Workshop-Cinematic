@@ -11,7 +11,23 @@ ShaderVariantCollection:
   - first: {fileID: 4800000, guid: 96246b1ead49a4c5a996fd477bc5a117, type: 3}
     second:
       variants:
+      - keywords: 
+        passType: 0
+      - keywords: COLOR_FILTER
+        passType: 0
+      - keywords: COLOR_FILTER EDGE_PLAIN
+        passType: 0
+      - keywords: DETAIL_ADDITIVE EDGE_PLAIN
+        passType: 0
+      - keywords: EDGE_PLAIN
+        passType: 0
+      - keywords: EDGE_PLAIN TONE_POSTERIZE
+        passType: 0
+      - keywords: EDGE_SHINY
+        passType: 0
       - keywords: GRADATION_COLOR2
+        passType: 0
+      - keywords: TARGET_HUE
         passType: 0
       - keywords: TONE_GRAYSCALE
         passType: 0
