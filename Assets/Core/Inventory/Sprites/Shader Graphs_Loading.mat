@@ -43,7 +43,7 @@ Material:
     m_Floats:
     - _ColorMask: 15
     - _CountBox: 60
-    - _FillValue: 1
+    - _FillValue: 0
     - _Flo: 60
     - _Float: 1
     - _Stencil: 0
