@@ -12,7 +12,11 @@
       "mcp__UnityMCP__batch_execute",
       "mcp__UnityMCP__unity_reflect",
       "mcp__UnityMCP__manage_components",
-      "mcp__UnityMCP__manage_prefabs"
+      "mcp__UnityMCP__manage_prefabs",
+      "mcp__UnityMCP__create_script",
+      "mcp__UnityMCP__manage_graphics",
+      "mcp__UnityMCP__manage_shader",
+      "mcp__UnityMCP__manage_material"
     ]
   }
 }
