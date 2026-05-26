@@ -3369,6 +3369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 947353119}
   - component: {fileID: 947353122}
+  - component: {fileID: 947353124}
   - component: {fileID: 947353121}
   - component: {fileID: 947353120}
   - component: {fileID: 947353123}
@@ -3395,7 +3396,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -545.24713, y: 98.11743}
+  m_AnchoredPosition: {x: -757.89154, y: 107.730286}
   m_SizeDelta: {x: 55, y: 55}
   m_Pivot: {x: 0.3, y: 0.8}
 --- !u!95 &947353120
@@ -3470,8 +3471,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09351c2cc9c28c74da05468af04f79a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CursorFollower
-  target: {fileID: 1648973957}
+  target: {fileID: 0}
   renderCamera: {fileID: 450753640}
+--- !u!114 &947353124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947353118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34bf25827a8f2884681f24d45597777f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Core.Inventory.Scripts.CursorBezierDebugDrawer
 --- !u!1 &981997734
 GameObject:
   m_ObjectHideFlags: 0
@@ -5623,12 +5636,12 @@ PlayableDirector:
     value: {fileID: 591915890}
   - key: {fileID: -4599380942431312460, guid: 6f3fa52d8cc0c804cafaf44fdb7824e7, type: 2}
     value: {fileID: 947353118}
-  - key: {fileID: 5723775754758156240, guid: 6f3fa52d8cc0c804cafaf44fdb7824e7, type: 2}
-    value: {fileID: 947353120}
   - key: {fileID: 7800425678731665314, guid: 6f3fa52d8cc0c804cafaf44fdb7824e7, type: 2}
     value: {fileID: 947353120}
   - key: {fileID: 6788487370475599836, guid: 6f3fa52d8cc0c804cafaf44fdb7824e7, type: 2}
     value: {fileID: 947353123}
+  - key: {fileID: 5089842178465094660, guid: 6f3fa52d8cc0c804cafaf44fdb7824e7, type: 2}
+    value: {fileID: 947353119}
   m_ExposedReferences:
     m_References:
     - fbaa66bdbe5b8c14ab38942fa67ac9ff: {fileID: 685540314}
