@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4beacecfccde3e34bacadfe77a17af7b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 190017
+  packageName: 'Steam VFX [HDRP, URP]'
+  packageVersion: 2.0.0
+  assetPath: Assets/Steam VFX [HDRP, URP]/DemoScene/Light/LightAnimations/PointLight.anim
+  uploadId: 446538

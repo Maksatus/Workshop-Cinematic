@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e09c2a4c899946444a5f695703327a8d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 190017
+  packageName: 'Steam VFX [HDRP, URP]'
+  packageVersion: 2.0.0
+  assetPath: Assets/Steam VFX [HDRP, URP]/Models/Ventilator/Prefabs/Ventilator.prefab
+  uploadId: 446538

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: eb5768b862039be4bbaff7a8fda937b5
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 190017
+  packageName: 'Steam VFX [HDRP, URP]'
+  packageVersion: 2.0.0
+  assetPath: Assets/Steam VFX [HDRP, URP]/VFX/Steam_VFX_01_Lit.vfx
+  uploadId: 446538

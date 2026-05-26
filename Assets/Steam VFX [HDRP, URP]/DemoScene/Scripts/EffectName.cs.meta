@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ac551d03afe43ac41afb8ecba23f2961
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 190017
+  packageName: 'Steam VFX [HDRP, URP]'
+  packageVersion: 2.0.0
+  assetPath: Assets/Steam VFX [HDRP, URP]/DemoScene/Scripts/EffectName.cs
+  uploadId: 446538

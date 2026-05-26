@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7a6335af0e43a6f41b4f1d66c6bbf651
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 190017
+  packageName: 'Steam VFX [HDRP, URP]'
+  packageVersion: 2.0.0
+  assetPath: Assets/Steam VFX [HDRP, URP]/DemoScene/Light/Directional Light.prefab
+  uploadId: 446538

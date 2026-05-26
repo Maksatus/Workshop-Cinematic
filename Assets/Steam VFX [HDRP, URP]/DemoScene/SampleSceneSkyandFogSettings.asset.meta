@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a123fc0ac58cb774e8592c925f167e7c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 190017
+  packageName: 'Steam VFX [HDRP, URP]'
+  packageVersion: 2.0.0
+  assetPath: Assets/Steam VFX [HDRP, URP]/DemoScene/SampleSceneSkyandFogSettings.asset
+  uploadId: 446538

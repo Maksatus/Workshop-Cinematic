@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ab804a6da8d99fa45b7f8dd09174ae94
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 190017
+  packageName: 'Steam VFX [HDRP, URP]'
+  packageVersion: 2.0.0
+  assetPath: Assets/Steam VFX [HDRP, URP]/DemoScene/Materials/Decal.mat
+  uploadId: 446538

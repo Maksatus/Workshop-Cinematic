@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 51b82088d7b05814a99bebad1fe04cff
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 190017
+  packageName: 'Steam VFX [HDRP, URP]'
+  packageVersion: 2.0.0
+  assetPath: Assets/Steam VFX [HDRP, URP]/VFX/Steam_VFX_01_Unlit.vfx
+  uploadId: 446538

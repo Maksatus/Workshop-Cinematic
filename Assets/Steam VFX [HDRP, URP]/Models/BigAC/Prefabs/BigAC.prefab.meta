@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f108c35befc3bf146bfbbc18311f3e65
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 190017
+  packageName: 'Steam VFX [HDRP, URP]'
+  packageVersion: 2.0.0
+  assetPath: Assets/Steam VFX [HDRP, URP]/Models/BigAC/Prefabs/BigAC.prefab
+  uploadId: 446538

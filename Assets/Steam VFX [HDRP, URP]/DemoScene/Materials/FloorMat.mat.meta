@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: fa4be29e832bf4f4aa49bcd9079aa73a
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 190017
+  packageName: 'Steam VFX [HDRP, URP]'
+  packageVersion: 2.0.0
+  assetPath: Assets/Steam VFX [HDRP, URP]/DemoScene/Materials/FloorMat.mat
+  uploadId: 446538

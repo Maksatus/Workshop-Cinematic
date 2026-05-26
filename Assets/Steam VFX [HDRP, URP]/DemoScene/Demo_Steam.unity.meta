@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 76f70b9e9752d28459e38a360de08770
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 190017
+  packageName: 'Steam VFX [HDRP, URP]'
+  packageVersion: 2.0.0
+  assetPath: Assets/Steam VFX [HDRP, URP]/DemoScene/Demo_Steam.unity
+  uploadId: 446538
