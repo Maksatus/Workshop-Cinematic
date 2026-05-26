@@ -36,7 +36,7 @@ Material:
     - _Alpha: 2
     - _DistortStrength: 0.08
     - _EdgeSoftness: 5.66
-    - _Intensity: 0.66
+    - _Intensity: 3
     - _LengthFade: 1.32
     - _NoiseScroll: 9.6
     - _NoiseTiling: 8.73
