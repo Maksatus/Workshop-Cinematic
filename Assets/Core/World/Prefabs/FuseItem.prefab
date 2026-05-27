@@ -142,6 +142,7 @@ MonoBehaviour:
   size: 
   sourceContainerId: 
   isBurned: 0
+  normalVisual: {fileID: 577743745945807164}
   burnedVisual: {fileID: 8552171229977364358}
 --- !u!65 &3053184337608660507
 BoxCollider:
