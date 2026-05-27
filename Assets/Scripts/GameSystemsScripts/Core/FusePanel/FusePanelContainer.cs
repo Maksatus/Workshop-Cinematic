@@ -13,6 +13,7 @@ namespace GameSystemsScripts.Core.FusePanel
         [SerializeField] private LayerMask interactionMask = ~0;
         [SerializeField] private FuseItemContainer fuseItemPrefab;
         [SerializeField] private SplineAnimate splineAnimation;
+        [SerializeField] private Vector3 fuseDragEulerAngles = new Vector3(0f, 0f, 90f);
         [SerializeField] private List<FuseSlotContainer> slotViews = new List<FuseSlotContainer>();
         [SerializeField] private List<FuseItemContainer> fuseViews = new List<FuseItemContainer>();
         [SerializeField] private List<FuseSourceContainer> sourceContainers = new List<FuseSourceContainer>();
@@ -24,6 +25,7 @@ namespace GameSystemsScripts.Core.FusePanel
         public LayerMask InteractionMask => interactionMask;
         public FuseItemContainer FuseItemPrefab => fuseItemPrefab;
         public SplineAnimate SplineAnimation => splineAnimation;
+        public Quaternion FuseDragRotation => Quaternion.Euler(fuseDragEulerAngles);
         public IReadOnlyList<FuseSlotContainer> SlotViews => slotViews;
         public IReadOnlyList<FuseItemContainer> FuseViews => fuseViews;
         public IReadOnlyList<FuseSourceContainer> SourceContainers => sourceContainers;

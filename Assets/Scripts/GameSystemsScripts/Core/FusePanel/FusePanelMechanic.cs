@@ -152,6 +152,8 @@ namespace GameSystemsScripts.Core.FusePanel
             _component.DraggedFuse = fuse;
             _component.DragOriginalParent = fuse.transform.parent;
             _component.DragOriginalPosition = fuse.transform.position;
+            _component.DragOriginalRotation = fuse.transform.localRotation;
+            fuse.transform.localRotation = _container.FuseDragRotation;
             _component.Phase = FusePanelPhase.Dragging;
         }
 
@@ -203,9 +205,12 @@ namespace GameSystemsScripts.Core.FusePanel
                 View = fuse
             };
 
+            fuse.transform.localRotation = _container.FuseDragRotation;
+
             _component.DraggedFuse = fuse;
             _component.DragOriginalParent = spawnPoint;
             _component.DragOriginalPosition = spawnPoint.position;
+            _component.DragOriginalRotation = Quaternion.identity;
             _component.Phase = FusePanelPhase.Dragging;
         }
 
@@ -348,6 +353,7 @@ namespace GameSystemsScripts.Core.FusePanel
             }
 
             fuse.transform.position = _component.DragOriginalPosition;
+            fuse.transform.localRotation = _component.DragOriginalRotation;
         }
 
         private void TryValidate()

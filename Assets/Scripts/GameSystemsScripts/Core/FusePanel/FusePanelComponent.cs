@@ -21,12 +21,14 @@ namespace GameSystemsScripts.Core.FusePanel
         public FuseItemContainer DraggedFuse;
         public Transform DragOriginalParent;
         public Vector3 DragOriginalPosition;
+        public Quaternion DragOriginalRotation;
 
         public void ResetDragState()
         {
             DraggedFuse = null;
             DragOriginalParent = null;
             DragOriginalPosition = Vector3.zero;
+            DragOriginalRotation = Quaternion.identity;
         }
     }
 }
