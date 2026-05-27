@@ -400,6 +400,11 @@ namespace GameSystemsScripts.Core.FusePanel
                 _container.PanelRoot.SetActive(false);
             }
 
+            if (_container.BoxRoot != null)
+            {
+                _container.BoxRoot.SetActive(false);
+            }
+
             OnCompleted?.Invoke();
         }
 

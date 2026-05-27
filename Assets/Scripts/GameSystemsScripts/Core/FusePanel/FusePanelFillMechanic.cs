@@ -11,8 +11,6 @@ namespace GameSystemsScripts.Core.FusePanel
         private const int MinVoltage = 5;
         private const int MaxVoltageInclusive = 12;
         private const float BurnedRatio = 0.3f;
-        private const float SplineTransitionDurationSeconds = 4f;
-        private const float SplineTargetSpeed = 1f;
 
         private readonly FusePanelComponent _panelComponent;
         private readonly FusePanelFillComponent _fillComponent;
@@ -30,8 +28,6 @@ namespace GameSystemsScripts.Core.FusePanel
 
         public void UpdateMechanic(GameSystemsHandler gameSystemsHandler, float deltaTime)
         {
-            UpdateSplineSpeedTransition(deltaTime);
-
             if (_container == null || _container.ActivationLink == null)
             {
                 return;
@@ -64,12 +60,7 @@ namespace GameSystemsScripts.Core.FusePanel
 
             if (_container.SplineAnimation != null)
             {
-                _container.SplineAnimation.MaxSpeed = _container.SplineSpeedOnPanelShow;
-                _fillComponent.IsSplineSpeedTransitionActive = true;
-                _fillComponent.SplineTransitionElapsed = 0f;
-                _fillComponent.SplineTransitionDuration = SplineTransitionDurationSeconds;
-                _fillComponent.SplineStartSpeed = _container.SplineSpeedOnPanelShow;
-                _fillComponent.SplineTargetSpeed = SplineTargetSpeed;
+                _container.SplineAnimation.Pause();
             }
 
             if (!GenerateAndApply())
@@ -205,24 +196,6 @@ namespace GameSystemsScripts.Core.FusePanel
 
             _panelComponent.CurrentGeneratedState = generated;
             return true;
-        }
-
-        private void UpdateSplineSpeedTransition(float deltaTime)
-        {
-            if (!_fillComponent.IsSplineSpeedTransitionActive || _container == null || _container.SplineAnimation == null)
-            {
-                return;
-            }
-
-            _fillComponent.SplineTransitionElapsed += Mathf.Max(0f, deltaTime);
-            var duration = Mathf.Max(0.001f, _fillComponent.SplineTransitionDuration);
-            var t = Mathf.Clamp01(_fillComponent.SplineTransitionElapsed / duration);
-            _container.SplineAnimation.MaxSpeed = Mathf.Lerp(_fillComponent.SplineStartSpeed, _fillComponent.SplineTargetSpeed, t);
-
-            if (t >= 1f)
-            {
-                _fillComponent.IsSplineSpeedTransitionActive = false;
-            }
         }
 
         private static void ClearSlotFuseInstances(FuseSlotSpec slot)

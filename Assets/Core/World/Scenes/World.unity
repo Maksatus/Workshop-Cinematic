@@ -2451,7 +2451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 421392994}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Jet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5039,6 +5039,96 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!1 &916757263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 916757264}
+  - component: {fileID: 916757266}
+  - component: {fileID: 916757265}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &916757264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916757263}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.70710677, y: -2.3459276e-10, z: 7.4132245e-10, w: 0.7071068}
+  m_LocalPosition: {x: 0.019978752, y: 0.009998644, z: -0.2800041}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 250517920}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!23 &916757265
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916757263}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 65c1c5852e1c9b74098a6e2c1c04f1e1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &916757266
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916757263}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &921067515
 GameObject:
   m_ObjectHideFlags: 0
@@ -10087,6 +10177,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7456015881234912913, guid: fc25b122c8c89924fb73cff88812c36b, type: 3}
   m_PrefabInstance: {fileID: 938604216}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &941659973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6674340787424978630, guid: 48004035aea9ad84cbc5289c7e62733f, type: 3}
+  m_PrefabInstance: {fileID: 3425193568994302696}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &945240895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13037,8 +13132,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478226477}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21543092, y: -0.5282999, z: 0.14065853, w: 0.80913776}
-  m_LocalPosition: {x: 298.8284, y: 50.868, z: 535.353}
+  m_LocalRotation: {x: 0.21842533, y: -0.51066077, z: 0.13596222, w: 0.8203842}
+  m_LocalPosition: {x: 298.18134, y: 50.868, z: 533.96277}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13965,10 +14060,13 @@ PlayableDirector:
     value: {fileID: 250517919}
   - key: {fileID: -6648781577855747594, guid: 7c39b4becaeb81b44b7884bd10b3045b, type: 2}
     value: {fileID: 892170876}
+  - key: {fileID: -5155155502377464915, guid: 7c39b4becaeb81b44b7884bd10b3045b, type: 2}
+    value: {fileID: 421392993}
   m_ExposedReferences:
     m_References:
     - 3afd2df20f725364b9b23ad86d78618e: {fileID: 1478226481}
     - 6c1c11d20c1de2d40a6abac2e7274419: {fileID: 517876065}
+    - 200bb84d8f65795458d722b4b1820358: {fileID: 0}
     - c5b3da25487b2a949a688c34c14739e7: {fileID: 517876065}
     - b8ebfc5a8f9f0754591195983fe901ec: {fileID: 517876065}
     - ca121e27c08d65f4d827dec8d0ee6f98: {fileID: 289344372}
@@ -16767,6 +16865,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2606110221452344037, guid: 48004035aea9ad84cbc5289c7e62733f, type: 3}
+      propertyPath: boxRoot
+      value: 
+      objectReference: {fileID: 941659973}
+    - target: {fileID: 2606110221452344037, guid: 48004035aea9ad84cbc5289c7e62733f, type: 3}
       propertyPath: inputCamera
       value: 
       objectReference: {fileID: 961739752}
@@ -16837,6 +16939,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6723006185232747167, guid: 48004035aea9ad84cbc5289c7e62733f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1472753936}
+    - targetCorrespondingSourceObject: {fileID: 6723006185232747167, guid: 48004035aea9ad84cbc5289c7e62733f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 916757264}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48004035aea9ad84cbc5289c7e62733f, type: 3}
 --- !u!4 &3425193568994302697 stripped
@@ -16849,7 +16954,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2606110221452344037, guid: 48004035aea9ad84cbc5289c7e62733f, type: 3}
   m_PrefabInstance: {fileID: 3425193568994302696}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 941659973}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 769df4b9cb06189468693a8fd4de7e92, type: 3}
