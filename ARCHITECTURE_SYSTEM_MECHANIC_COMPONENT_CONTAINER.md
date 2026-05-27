@@ -1,4 +1,4 @@
-# Архитектурный стандарт проекта (System-Mechanic-Component-Container)
+﻿# Архитектурный стандарт проекта (System-Mechanic-Component-Container)
 
 ## 1. Цель документа
 
@@ -74,9 +74,14 @@
 - система должна явно определять, в каких стейтах она активна;
 - если стейт не подходит, `System` завершает `UpdateSystem` без выполнения механики.
 
-Текущее перечисление стейтов проекта:
+Пример последовательности стейтов (шаблон):
 
-`AwaitAnimation -> StartGame -> DrawElements -> SelectElements -> CompareRecipe -> StartBoil -> BoilingCoffee -> CalculateValue -> ApproveRecipe -> CoffeeShow -> CompareLevelComplete -> RewardElements -> ChangeLevel -> UpdateLevelView -> GameOver`
+`Bootstrap -> InitializeSession -> LoadContent -> MainMenu -> PrepareLevel -> Gameplay -> Pause -> EvaluateResult -> Reward -> LevelTransition -> UpdateProgress -> GameOver`
+Обязательное правило:
+
+- этот блок не является фиксированным для всех проектов;
+- при старте нового проекта последовательность стейтов должна быть адаптирована под его игровой цикл;
+- при любом изменении state-flow в ходе разработки этот раздел должен обновляться синхронно с кодом (`GameStates`, переходы систем).
 
 ## 5. Как расширять последовательность стейтов
 
@@ -91,6 +96,7 @@
 4. Обновить системы, которые должны быть активны в новом стейте.
 5. Убедиться, что нет «тупиковых» состояний (без выхода) и циклов без управляющего условия.
 6. Обновить архитектурную документацию и таблицу стейтов.
+7. При добавлении, удалении или переименовании любого стейта в рабочем проекте обязательно синхронно обновить этот раздел и таблицу переходов.
 
 Рекомендуется поддерживать отдельную таблицу вида:
 
@@ -161,4 +167,30 @@
 4. Создание объектов идет только через `GameObjectFactories`?
 5. Есть ли корректный `Dispose`?
 6. Обновлена ли документация по архитектуре и стейтам?
+
+## 11. Текущая реализация v1: GameplayTimer
+
+Добавлен модуль `GameplayTimer` в `Assets/Scripts/GameSystemsScripts/GameplayTimer`:
+
+- `GameplayTimerSystem`
+- `GameplayTimerMechanic`
+- `GameplayTimerComponent`
+- `GameplayTimerContainer`
+
+Назначение:
+
+- считать игровое время текущей сессии;
+- отображать его на HUD в формате `MM:SS`;
+- не сохранять время между запусками в v1.
+
+Правило активации:
+
+- система обновляется только в `GameState.Gameplay`.
+
+Таблица активации:
+
+| System | Active State | Поведение |
+| --- | --- | --- |
+| `GameplayTimerSystem` | `Gameplay` | Инкрементирует время на `deltaTime` и обновляет HUD |
+
 
