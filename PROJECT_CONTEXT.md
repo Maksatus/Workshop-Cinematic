@@ -186,3 +186,17 @@ AwaitAnimation → StartGame → DrawElements → SelectElements → CompareReci
 - При изменении списка GameStates
 - При фиксации порядка переходов между сценами
 - При изменении архитектурных правил
+
+---
+
+## 13. SMCC MonoBehaviour Naming Convention (Mandatory)
+
+- Any `MonoBehaviour` that belongs to an SMCC feature and stores Unity scene references/settings must use the `Container` suffix.
+- Suffixes `View`, `Presenter`, and `Controller` are not allowed for such classes.
+- Valid examples: `FusePanelContainer`, `FuseSlotContainer`, `FuseItemContainer`, `SceneSystemsContainer`.
+- Invalid examples: `FuseItemView`, `FuseSlotView`, `FusePanelController`.
+- If a `MonoBehaviour` is intentionally not an SMCC container, the class should include an explicit code comment explaining why.
+
+### Review Checklist Addendum
+
+- [ ] All `MonoBehaviour` classes in new SMCC features use the `Container` suffix (no `View/Controller/Presenter`).

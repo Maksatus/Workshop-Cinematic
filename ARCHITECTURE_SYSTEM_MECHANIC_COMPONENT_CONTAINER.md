@@ -159,6 +159,14 @@
 - добавлять стейты без явной схемы входа/выхода;
 - создавать игровые объекты в обход `GameObjectFactories`.
 
+## 9.1. Naming Convention для MonoBehaviour (обязательно)
+
+- Любой `MonoBehaviour`, который относится к SMCC-фиче и хранит Unity-ссылки/настройки сцены, обязан иметь суффикс `Container`.
+- Суффиксы `View`, `Presenter`, `Controller` для таких классов запрещены.
+- Допустимые примеры: `FusePanelContainer`, `FuseSlotContainer`, `FuseItemContainer`, `SceneSystemsContainer`.
+- Недопустимые примеры: `FuseItemView`, `FuseSlotView`, `FusePanelController`.
+- Если `MonoBehaviour` не является SMCC-контейнером, в комментарии класса должно быть явное обоснование.
+
 ## 10. Мини-чеклист ревью новой фичи
 
 1. Есть ли четкое разделение `System/Mechanic/Component/Container`?
@@ -167,6 +175,7 @@
 4. Создание объектов идет только через `GameObjectFactories`?
 5. Есть ли корректный `Dispose`?
 6. Обновлена ли документация по архитектуре и стейтам?
+7. Все `MonoBehaviour` в новой SMCC-фиче именованы с суффиксом `Container` (без `View/Controller/Presenter`)?
 
 ## 11. Текущая реализация v1: GameplayTimer
 
