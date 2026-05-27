@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Splines;
 
 namespace GameSystemsScripts.Core.FusePanel
 {
@@ -10,6 +11,8 @@ namespace GameSystemsScripts.Core.FusePanel
         [SerializeField] private Camera inputCamera;
         [SerializeField] private LayerMask interactionMask = ~0;
         [SerializeField] private FuseItemContainer fuseItemPrefab;
+        [SerializeField] private SplineAnimate splineAnimation;
+        [SerializeField] private float splineSpeedOnPanelShow = 0.1f;
         [SerializeField] private List<FuseSlotContainer> slotViews = new List<FuseSlotContainer>();
         [SerializeField] private List<FuseItemContainer> fuseViews = new List<FuseItemContainer>();
         [SerializeField] private List<FuseSourceContainer> sourceContainers = new List<FuseSourceContainer>();
@@ -19,6 +22,8 @@ namespace GameSystemsScripts.Core.FusePanel
         public Camera InputCamera => inputCamera;
         public LayerMask InteractionMask => interactionMask;
         public FuseItemContainer FuseItemPrefab => fuseItemPrefab;
+        public SplineAnimate SplineAnimation => splineAnimation;
+        public float SplineSpeedOnPanelShow => splineSpeedOnPanelShow;
         public IReadOnlyList<FuseSlotContainer> SlotViews => slotViews;
         public IReadOnlyList<FuseItemContainer> FuseViews => fuseViews;
         public IReadOnlyList<FuseSourceContainer> SourceContainers => sourceContainers;

@@ -6,8 +6,10 @@ namespace GameSystemsScripts.Core.FusePanel
     {
         [SerializeField] private string containerId;
         [SerializeField] private Transform spawnPoint;
+        [SerializeField] private int supplyVoltage = 12;
 
         public string ContainerId => containerId;
         public Transform SpawnPoint => spawnPoint != null ? spawnPoint : transform;
+        public int SupplyVoltage => supplyVoltage;
     }
 }

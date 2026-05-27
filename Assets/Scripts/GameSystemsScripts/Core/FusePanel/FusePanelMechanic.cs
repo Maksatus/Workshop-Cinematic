@@ -6,7 +6,8 @@ namespace GameSystemsScripts.Core.FusePanel
 {
     public sealed class FusePanelMechanic : IGameMechanic
     {
-        private const float DragDepth = 2.25f;
+        private const float DragDepth = 1.0f;
+        private static int _runtimeFuseSequence;
 
         private readonly FusePanelComponent _component;
         private readonly FusePanelContainer _container;
@@ -67,25 +68,40 @@ namespace GameSystemsScripts.Core.FusePanel
                 return;
             }
 
+            Debug.Log("FusePanel: remove burned fuse click detected.");
+
             if (!TryRaycast(out var hit))
             {
+                Debug.LogWarning("FusePanel: remove failed - raycast did not hit any collider.");
                 return;
             }
+
+            Debug.Log($"FusePanel: raycast hit '{hit.collider.name}'.");
 
             var fuse = hit.collider.GetComponentInParent<FuseItemContainer>();
             if (fuse == null || !fuse.IsBurned)
             {
+                if (fuse == null)
+                {
+                    Debug.LogWarning("FusePanel: remove failed - hit object has no FuseItemContainer.");
+                }
+                else
+                {
+                    Debug.LogWarning($"FusePanel: remove failed - fuse '{fuse.name}' is not burned.");
+                }
                 return;
             }
 
             var slot = GetSlotByFuse(fuse);
             if (slot == null)
             {
+                Debug.LogWarning($"FusePanel: remove failed - burned fuse '{fuse.name}' is not assigned to any slot runtime state.");
                 return;
             }
 
             slot.CurrentFuseView = null;
             fuse.gameObject.SetActive(false);
+            Debug.Log($"FusePanel: burned fuse '{fuse.name}' removed from slot '{slot.SlotId}'.");
             OnFuseRemoved?.Invoke(fuse);
         }
 
@@ -114,6 +130,13 @@ namespace GameSystemsScripts.Core.FusePanel
                 return;
             }
 
+            var sourceContainer = hit.collider.GetComponentInParent<FuseSourceContainer>();
+            if (sourceContainer != null)
+            {
+                StartDragFromSource(sourceContainer);
+                return;
+            }
+
             var fuse = hit.collider.GetComponentInParent<FuseItemContainer>();
             if (fuse == null || !fuse.gameObject.activeInHierarchy)
             {
@@ -132,6 +155,60 @@ namespace GameSystemsScripts.Core.FusePanel
             _component.Phase = FusePanelPhase.Dragging;
         }
 
+        private void StartDragFromSource(FuseSourceContainer sourceContainer)
+        {
+            if (sourceContainer == null)
+            {
+                return;
+            }
+
+            if (_container.FuseItemPrefab == null)
+            {
+                Debug.LogError("FusePanel: cannot spawn dragged fuse - FuseItemPrefab is not assigned.");
+                return;
+            }
+
+            var spawnPoint = sourceContainer.SpawnPoint;
+            if (spawnPoint == null)
+            {
+                Debug.LogError($"FusePanel: source '{sourceContainer.name}' has no spawn point.");
+                return;
+            }
+
+            var fuse = UnityEngine.Object.Instantiate(_container.FuseItemPrefab, spawnPoint);
+            if (fuse == null)
+            {
+                Debug.LogError("FusePanel: failed to instantiate fuse from source.");
+                return;
+            }
+
+            _runtimeFuseSequence++;
+            var fuseId = $"runtime_drag_{_runtimeFuseSequence}";
+            fuse.SetFuseId(fuseId);
+            fuse.SetSourceContainerId(sourceContainer.ContainerId);
+            fuse.SetVoltage(sourceContainer.SupplyVoltage);
+            fuse.SetBurned(false);
+            fuse.transform.SetParent(spawnPoint, false);
+            fuse.transform.localPosition = Vector3.zero;
+            fuse.transform.localRotation = Quaternion.identity;
+            fuse.gameObject.SetActive(true);
+
+            _component.FusesById[fuseId] = new FuseItemSpec
+            {
+                FuseId = fuseId,
+                Voltage = sourceContainer.SupplyVoltage,
+                Color = fuse.Color,
+                Size = fuse.Size,
+                SourceContainerId = sourceContainer.ContainerId,
+                View = fuse
+            };
+
+            _component.DraggedFuse = fuse;
+            _component.DragOriginalParent = spawnPoint;
+            _component.DragOriginalPosition = spawnPoint.position;
+            _component.Phase = FusePanelPhase.Dragging;
+        }
+
         private void UpdateDraggedPosition()
         {
             var camera = _container.InputCamera;
@@ -140,35 +217,122 @@ namespace GameSystemsScripts.Core.FusePanel
                 return;
             }
 
-            var mousePosition = Input.mousePosition;
-            mousePosition.z = DragDepth;
-            _component.DraggedFuse.transform.position = camera.ScreenToWorldPoint(mousePosition);
+            var ray = camera.ScreenPointToRay(Input.mousePosition);
+            _component.DraggedFuse.transform.position = ray.GetPoint(DragDepth);
         }
 
         private void TryDropDraggedFuse()
         {
             var draggedFuse = _component.DraggedFuse;
-            FuseSlotContainer targetSlot = null;
-            if (TryRaycast(out var hit))
+            var targetSlot = FindDropSlotIgnoringDraggedFuse(draggedFuse);
+            if (targetSlot == null)
             {
-                targetSlot = hit.collider.GetComponentInParent<FuseSlotContainer>();
+                targetSlot = FindDropSlotByScreenDistance();
             }
 
-            var targetSpec = targetSlot != null ? GetSlotById(targetSlot.SlotId) : null;
+            var targetSpec = targetSlot != null ? GetSlotByContainer(targetSlot) : null;
             if (targetSpec != null && targetSpec.CurrentFuseView == null)
             {
                 targetSpec.CurrentFuseView = draggedFuse;
-                draggedFuse.transform.SetParent(targetSpec.SlotTransform, true);
-                draggedFuse.transform.position = targetSpec.SlotTransform.position;
+                draggedFuse.transform.SetParent(targetSpec.SlotTransform, false);
+                draggedFuse.transform.localPosition = Vector3.zero;
+                draggedFuse.transform.localRotation = Quaternion.identity;
                 draggedFuse.SetBurned(false);
+                Debug.Log($"FusePanel: fuse dropped into slot '{targetSlot.SlotId}'.");
                 OnFuseDropped?.Invoke(draggedFuse, targetSlot);
             }
             else
             {
+                Debug.LogWarning("FusePanel: drop failed - no valid empty slot found, returning fuse to source.");
                 ReturnDraggedFuseToSource(draggedFuse);
             }
 
             _component.ResetDragState();
+        }
+
+        private FuseSlotContainer FindDropSlotIgnoringDraggedFuse(FuseItemContainer draggedFuse)
+        {
+            var camera = _container.InputCamera;
+            if (camera == null)
+            {
+                return null;
+            }
+
+            var ray = camera.ScreenPointToRay(Input.mousePosition);
+            var hits = Physics.RaycastAll(ray, 100f, _container.InteractionMask.value);
+            if (hits == null || hits.Length == 0)
+            {
+                return null;
+            }
+
+            Array.Sort(hits, (a, b) => a.distance.CompareTo(b.distance));
+            for (var i = 0; i < hits.Length; i++)
+            {
+                var hit = hits[i];
+                var hitFuse = hit.collider.GetComponentInParent<FuseItemContainer>();
+                if (hitFuse != null && hitFuse == draggedFuse)
+                {
+                    continue;
+                }
+
+                var slot = hit.collider.GetComponentInParent<FuseSlotContainer>();
+                if (slot != null)
+                {
+                    return slot;
+                }
+            }
+
+            return null;
+        }
+
+        private FuseSlotContainer FindDropSlotByScreenDistance()
+        {
+            var camera = _container.InputCamera;
+            if (camera == null)
+            {
+                return null;
+            }
+
+            const float maxScreenDistance = 120f;
+            var mouse = (Vector2)Input.mousePosition;
+            FuseSlotContainer bestSlot = null;
+            var bestDistance = float.MaxValue;
+
+            for (var i = 0; i < _component.Slots.Count; i++)
+            {
+                var slot = _component.Slots[i];
+                if (slot == null || slot.SlotTransform == null || slot.CurrentFuseView != null)
+                {
+                    continue;
+                }
+
+                var slotContainer = slot.SlotTransform.GetComponent<FuseSlotContainer>();
+                if (slotContainer == null)
+                {
+                    continue;
+                }
+
+                var screenPoint = camera.WorldToScreenPoint(slot.SlotTransform.position);
+                if (screenPoint.z <= 0f)
+                {
+                    continue;
+                }
+
+                var distance = Vector2.Distance(mouse, new Vector2(screenPoint.x, screenPoint.y));
+                if (distance < bestDistance)
+                {
+                    bestDistance = distance;
+                    bestSlot = slotContainer;
+                }
+            }
+
+            if (bestSlot != null && bestDistance <= maxScreenDistance)
+            {
+                Debug.Log($"FusePanel: fallback slot match by screen distance ({bestDistance:F1}px).");
+                return bestSlot;
+            }
+
+            return null;
         }
 
         private void ReturnDraggedFuseToSource(FuseItemContainer fuse)
@@ -189,6 +353,11 @@ namespace GameSystemsScripts.Core.FusePanel
         private void TryValidate()
         {
             if (!AreAllSlotsFilled())
+            {
+                return;
+            }
+
+            if (HasInstalledBurnedFuses())
             {
                 return;
             }
@@ -247,6 +416,20 @@ namespace GameSystemsScripts.Core.FusePanel
             return _component.Slots.Count > 0;
         }
 
+        private bool HasInstalledBurnedFuses()
+        {
+            for (var i = 0; i < _component.Slots.Count; i++)
+            {
+                var fuse = _component.Slots[i].CurrentFuseView;
+                if (fuse != null && fuse.IsBurned)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         private FuseSlotSpec GetSlotByFuse(FuseItemContainer fuse)
         {
             for (var i = 0; i < _component.Slots.Count; i++)
@@ -267,6 +450,25 @@ namespace GameSystemsScripts.Core.FusePanel
                 if (_component.Slots[i].SlotId == slotId)
                 {
                     return _component.Slots[i];
+                }
+            }
+
+            return null;
+        }
+
+        private FuseSlotSpec GetSlotByContainer(FuseSlotContainer slotContainer)
+        {
+            if (slotContainer == null)
+            {
+                return null;
+            }
+
+            for (var i = 0; i < _component.Slots.Count; i++)
+            {
+                var slot = _component.Slots[i];
+                if (slot.SlotTransform == slotContainer.transform)
+                {
+                    return slot;
                 }
             }
 

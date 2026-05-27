@@ -30,6 +30,11 @@ namespace GameSystemsScripts.Core.FusePanel
             voltage = value;
         }
 
+        public void SetSourceContainerId(string value)
+        {
+            sourceContainerId = value;
+        }
+
         public void SetBurned(bool burned)
         {
             isBurned = burned;
