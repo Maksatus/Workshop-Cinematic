@@ -1,0 +1,2347 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &49760353714675027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6723006185232747167}
+  m_Layer: 0
+  m_Name: FuseRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6723006185232747167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49760353714675027}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 750219162655074874}
+  - {fileID: 8192365632029247390}
+  - {fileID: 3243188408563024856}
+  m_Father: {fileID: 7702323224414715207}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4072025623045565567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3243188408563024856}
+  m_Layer: 0
+  m_Name: FuseItems
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3243188408563024856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4072025623045565567}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6723006185232747167}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6674340787424978630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7702323224414715207}
+  - component: {fileID: 2606110221452344037}
+  m_Layer: 0
+  m_Name: FusePannel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7702323224414715207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6674340787424978630}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6723006185232747167}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2606110221452344037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6674340787424978630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769df4b9cb06189468693a8fd4de7e92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FusePanelContainer
+  panelRoot: {fileID: 49760353714675027}
+  activationLink:
+    activationObject: {fileID: 49760353714675027}
+  inputCamera: {fileID: 0}
+  interactionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  slotViews:
+  - {fileID: 5855406675911542283}
+  - {fileID: 1586444624021585376}
+  - {fileID: 5134176086534112538}
+  - {fileID: 6919510079624668173}
+  - {fileID: 8335821761470068828}
+  - {fileID: 831715351930223334}
+  - {fileID: 1705186562968294448}
+  - {fileID: 652616865642024004}
+  - {fileID: 7743492787020948739}
+  - {fileID: 5649207294396787543}
+  - {fileID: 6144826016315493257}
+  - {fileID: 1820956571693576101}
+  - {fileID: 729719223522088738}
+  - {fileID: 2531630151212450317}
+  - {fileID: 1645996246325713428}
+  - {fileID: 4903554030442559469}
+  - {fileID: 9218672027377190768}
+  - {fileID: 608334212472002691}
+  - {fileID: 5849590731345935621}
+  - {fileID: 1207663584114789839}
+  - {fileID: 1864582478140790550}
+  - {fileID: 3833693698873669886}
+  - {fileID: 7632130001547199791}
+  - {fileID: 116131939804655614}
+  - {fileID: 5782050526032261472}
+  - {fileID: 1259574034336938491}
+  - {fileID: 8071180452422588595}
+  - {fileID: 3597836836940797455}
+  fuseViews: []
+  sourceContainers: []
+--- !u!1 &7204985457938775088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 750219162655074874}
+  m_Layer: 0
+  m_Name: FuseMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &750219162655074874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204985457938775088}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8733436697968894305}
+  m_Father: {fileID: 6723006185232747167}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7708191771705673565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8192365632029247390}
+  m_Layer: 0
+  m_Name: FuseSlots
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8192365632029247390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7708191771705673565}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3978340422904758982}
+  - {fileID: 8102921492399536429}
+  - {fileID: 2393437951310922199}
+  - {fileID: 464006078728446144}
+  - {fileID: 1574495610707164305}
+  - {fileID: 7925678269371940395}
+  - {fileID: 8204847091454234877}
+  - {fileID: 8032729881055709321}
+  - {fileID: 937060407612711374}
+  - {fileID: 2887219446595235738}
+  - {fileID: 3688936711349866308}
+  - {fileID: 9165428370078247784}
+  - {fileID: 7806718461047378927}
+  - {fileID: 4995999305431484096}
+  - {fileID: 8115682297831136985}
+  - {fileID: 2484754138887287584}
+  - {fileID: 1844293925039080381}
+  - {fileID: 7928110429944159310}
+  - {fileID: 3988668746011179464}
+  - {fileID: 8553753452368234754}
+  - {fileID: 9193853666757940187}
+  - {fileID: 5999769743257304115}
+  - {fileID: 1125256816392585698}
+  - {fileID: 7488333557809179443}
+  - {fileID: 3912091517249598893}
+  - {fileID: 8578676938448387382}
+  - {fileID: 1618451479390182526}
+  - {fileID: 6312189992778306242}
+  m_Father: {fileID: 6723006185232747167}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &12044069006278024
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.254
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2284
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.028299998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &116131939804655614 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 12044069006278024}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &7488333557809179443 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 12044069006278024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &628481890095160882
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.048
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2284
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.028299998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &652616865642024004 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 628481890095160882}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &8032729881055709321 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 628481890095160882}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &704641646657702645
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3275
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &608334212472002691 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 704641646657702645}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &7928110429944159310 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 704641646657702645}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &737613777812121744
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.053
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3275
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &831715351930223334 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 737613777812121744}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &7925678269371940395 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 737613777812121744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &834895060773897556
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1276
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3714
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &729719223522088738 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 834895060773897556}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &7806718461047378927 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 834895060773897556}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1210545325133245325
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3275
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &1259574034336938491 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 1210545325133245325}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &8578676938448387382 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 1210545325133245325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1257670635320025017
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.19299999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2284
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.028299998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &1207663584114789839 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 1257670635320025017}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &8553753452368234754 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 1257670635320025017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1593242114913224262
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.053
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2805
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &1705186562968294448 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 1593242114913224262}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &8204847091454234877 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 1593242114913224262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1684803362835925090
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1276
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2805
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &1645996246325713428 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 1684803362835925090}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &8115682297831136985 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 1684803362835925090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1707552127637041046
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0099
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3275
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &1586444624021585376 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 1707552127637041046}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &8102921492399536429 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 1707552127637041046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1753602868567934304
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3714
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &1864582478140790550 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 1753602868567934304}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &9193853666757940187 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 1753602868567934304}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1797790832688086483
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0754
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2284
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.028299998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &1820956571693576101 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 1797790832688086483}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &9165428370078247784 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 1797790832688086483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2491747694428098683
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1276
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3275
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &2531630151212450317 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 2491747694428098683}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &4995999305431484096 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 2491747694428098683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3483616691866109049
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3175
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2284
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.028299998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &3597836836940797455 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 3483616691866109049}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &6312189992778306242 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 3483616691866109049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3783687231099792008
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3275
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!114 &3833693698873669886 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 3783687231099792008}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!4 &5999769743257304115 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 3783687231099792008}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5024525211367663003
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1326
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2284
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.028299998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!4 &2484754138887287584 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 5024525211367663003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4903554030442559469 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 5024525211367663003}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!1001 &5113308051181213548
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0099
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2805
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!4 &2393437951310922199 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 5113308051181213548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5134176086534112538 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 5113308051181213548}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!1001 &5751197313912944929
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0704
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3275
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!4 &2887219446595235738 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 5751197313912944929}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5649207294396787543 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 5751197313912944929}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!1001 &5808434748186193779
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2805
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!4 &3988668746011179464 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 5808434748186193779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5849590731345935621 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 5808434748186193779}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!1001 &5833509789967996029
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0099
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3714
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!4 &3978340422904758982 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 5833509789967996029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5855406675911542283 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 5833509789967996029}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!1001 &5875973995654128406
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3714
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!4 &3912091517249598893 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 5875973995654128406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5782050526032261472 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 5875973995654128406}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!1001 &6120552227291961855
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0704
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2805
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!4 &3688936711349866308 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 6120552227291961855}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6144826016315493257 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 6120552227291961855}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!1001 &7039502970066941563
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0149
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2284
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.028299998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!4 &464006078728446144 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 7039502970066941563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6919510079624668173 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 7039502970066941563}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!1001 &7520055535559006041
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2805
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!4 &1125256816392585698 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 7520055535559006041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7632130001547199791 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 7520055535559006041}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!1001 &7692208429033076597
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0704
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3714
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!4 &937060407612711374 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 7692208429033076597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7743492787020948739 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 7692208429033076597}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!1001 &8193394339747941061
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2805
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!4 &1618451479390182526 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 8193394339747941061}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8071180452422588595 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 8193394339747941061}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!1001 &8221486991511005738
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.053
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3714
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!4 &1574495610707164305 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 8221486991511005738}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8335821761470068828 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 8221486991511005738}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!1001 &9104328169963590918
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8192365632029247390}
+    m_Modifications:
+    - target: {fileID: 6513729752677427984, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_Name
+      value: FuseSlot (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3714
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+--- !u!4 &1844293925039080381 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7476307118234965691, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 9104328169963590918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9218672027377190768 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 123390931992236662, guid: a92c4dc6a16a7c842a0c8c7eafd42d9d, type: 3}
+  m_PrefabInstance: {fileID: 9104328169963590918}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52263948a8fe8ee48a22a83a8a94510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSystemsScripts.Core.FusePanel.FuseSlotView
+--- !u!1001 &9131575025662854794
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 750219162655074874}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 1bcbc7ae027574d4187634015cec5520, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.026056927
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bcbc7ae027574d4187634015cec5520, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bcbc7ae027574d4187634015cec5520, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.012378871
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bcbc7ae027574d4187634015cec5520, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.991553
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bcbc7ae027574d4187634015cec5520, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.000000037430084
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bcbc7ae027574d4187634015cec5520, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.12970191
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bcbc7ae027574d4187634015cec5520, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000048961115
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bcbc7ae027574d4187634015cec5520, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bcbc7ae027574d4187634015cec5520, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 14.905
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1bcbc7ae027574d4187634015cec5520, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1bcbc7ae027574d4187634015cec5520, type: 3}
+      propertyPath: m_Name
+      value: fusePannelDecimate
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1bcbc7ae027574d4187634015cec5520, type: 3}
+--- !u!4 &8733436697968894305 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1bcbc7ae027574d4187634015cec5520, type: 3}
+  m_PrefabInstance: {fileID: 9131575025662854794}
+  m_PrefabAsset: {fileID: 0}
