@@ -10,7 +10,7 @@ TerrainLayer:
   m_DiffuseTexture: {fileID: 2800000, guid: 3e25772232eff594eb13c394f255339e, type: 3}
   m_NormalMapTexture: {fileID: 2800000, guid: 32826f4dd109b81498d88d71460c59fc, type: 3}
   m_MaskMapTexture: {fileID: 2800000, guid: de58fdb6b938b3c449092454ac2439c4, type: 3}
-  m_TileSize: {x: 3, y: 5}
+  m_TileSize: {x: 9, y: 15}
   m_TileOffset: {x: 0, y: 0}
   m_Specular: {r: 1, g: 1, b: 1, a: 1}
   m_Metallic: 0
